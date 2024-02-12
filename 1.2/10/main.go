@@ -30,9 +30,7 @@ func main() {
 		lang = "English"
 	case "fr":
 		lang = "French"
-	case "ru":
-		lang = "Russian"
-	case "rus":
+	case "ru", "rus":
 		lang = "Russian"
 	default:
 		lang = "Unknown"
@@ -40,3 +38,19 @@ func main() {
 
 	fmt.Println(lang)
 }
+
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var arr [2][3]int
+// 	for i := 0; i < 2; i++ { // 0 1
+// 		for j := 0; j < 3; j++ { // 0 1 2
+// 			arr[i][j] = i + j
+// 		}
+// 	}
+// 	fmt.Println("2d:", arr)
+// 	// 2d: [[0 1 2] [1 2 3]]
+
+// }
